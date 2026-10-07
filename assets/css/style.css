@@ -1,0 +1,174 @@
+/* Animations for the static home page (Tailwind handles everything else). */
+
+html {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Hero background slider: slow cross-fade */
+.hero-slide {
+    opacity: 0;
+    transition: opacity 1.4s ease-in-out;
+}
+
+.hero-slide.is-active {
+    opacity: 1;
+    animation: hero-zoom 9s ease-out both;
+}
+
+/* Slow "Ken Burns" push-in on the visible slide */
+@keyframes hero-zoom {
+    from { transform: scale(1.12); }
+    to { transform: scale(1); }
+}
+
+/* Hero copy: staggered rise on page load */
+.hero-enter {
+    animation: rise-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation-delay: calc(var(--i, 0) * 120ms + 150ms);
+}
+
+@keyframes rise-in {
+    from { opacity: 0; transform: translateY(24px); filter: blur(6px); }
+    to { opacity: 1; transform: none; filter: none; }
+}
+
+/* Hero union name: flowing colour gradient through the letters */
+.hero-title-shine {
+    display: inline-block;
+    padding-block: 0.1em; /* keeps Bangla matras/descenders from being clipped */
+    background-image: linear-gradient(
+        100deg,
+        #ffffff 0%,
+        #acdcc6 20%,
+        #fde68a 40%,
+        #ffffff 50%,
+        #78c3a4 65%,
+        #fde68a 82%,
+        #ffffff 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: title-shine 8s linear infinite;
+}
+
+@keyframes title-shine {
+    from { background-position: 0% center; }
+    to { background-position: -200% center; }
+}
+
+/* Scroll reveal: only hides content once JS has marked the page, so no-JS users see everything */
+.js [data-reveal] {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    transition-delay: calc(var(--i, 0) * 90ms);
+}
+
+.js [data-reveal='left'] { transform: translateX(-40px); }
+.js [data-reveal='right'] { transform: translateX(40px); }
+.js [data-reveal='zoom'] { transform: scale(0.94); }
+
+.js [data-reveal].is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* Section titles: icon pops, text slides in, underline grows */
+.js [data-title-anim] .title-icon { opacity: 0; transform: scale(0.4) rotate(-25deg); }
+.js [data-title-anim] .title-text { opacity: 0; transform: translateX(-16px); }
+.js [data-title-anim] .title-bar { transform: scaleX(0); }
+.js [data-title-anim] .title-link { opacity: 0; }
+
+.js [data-title-anim].is-in .title-icon {
+    animation: title-icon-pop 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) 0.1s forwards;
+}
+.js [data-title-anim].is-in .title-text {
+    animation: title-slide 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.25s forwards;
+}
+.js [data-title-anim].is-in .title-bar {
+    animation: title-bar-grow 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.5s forwards;
+}
+.js [data-title-anim].is-in .title-link {
+    animation: title-fade 0.6s ease 0.6s forwards;
+}
+
+@keyframes title-icon-pop { to { opacity: 1; transform: none; } }
+@keyframes title-slide { to { opacity: 1; transform: none; } }
+@keyframes title-bar-grow { to { transform: scaleX(1); } }
+@keyframes title-fade { to { opacity: 1; } }
+
+.title-bar {
+    transform-origin: left;
+    transition: width 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Underline stretches a little when hovering the heading row */
+.section-heading:hover .title-bar {
+    width: 4.5rem;
+}
+
+/* Gentle zoom on featured images when hovering their card */
+.zoom-on-hover img {
+    transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.zoom-on-hover:hover img {
+    transform: scale(1.06);
+}
+
+/* Stat icon: small wiggle on hover */
+.group:hover .icon-pop {
+    animation: icon-pop 0.5s ease;
+}
+
+@keyframes icon-pop {
+    0%, 100% { transform: rotate(0) scale(1); }
+    30% { transform: rotate(-10deg) scale(1.12); }
+    60% { transform: rotate(6deg) scale(1.05); }
+}
+
+/* Floating decorative blobs (CTA banner) */
+.float-blob {
+    animation: float-blob 12s ease-in-out infinite alternate;
+}
+
+@keyframes float-blob {
+    from { transform: translate(0, 0) scale(1); }
+    to { transform: translate(40px, -30px) scale(1.15); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-slide {
+        transition: none;
+    }
+
+    .hero-slide.is-active,
+    .hero-enter,
+    .hero-title-shine,
+    .float-blob,
+    .group:hover .icon-pop {
+        animation: none;
+    }
+
+    .js [data-reveal] {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .js [data-title-anim] .title-icon,
+    .js [data-title-anim] .title-text,
+    .js [data-title-anim] .title-bar,
+    .js [data-title-anim] .title-link {
+        opacity: 1;
+        transform: none;
+        animation: none !important;
+    }
+
+    .zoom-on-hover:hover img {
+        transform: none;
+    }
+}

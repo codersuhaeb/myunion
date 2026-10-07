@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>১২ নং মদনপুর ইউনিয়ন</title>
+    <meta name="description" content="আমাদের ইউনিয়ন, আমাদের পরিচয় ও আমাদের সম্ভাবনার ডিজিটাল ঠিকানা।">
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+
+    <!-- Mark the page before first paint so scroll-reveal content doesn't flash -->
+    <script>if ('IntersectionObserver' in window) document.documentElement.classList.add('js')</script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS v4 (browser build) -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --font-sans: 'Hind Siliguri', 'Noto Sans Bengali', ui-sans-serif, system-ui, sans-serif;
+
+            /* Brand: calm river green */
+            --color-brand-50: #eef8f3;
+            --color-brand-100: #d5eee2;
+            --color-brand-200: #acdcc6;
+            --color-brand-300: #78c3a4;
+            --color-brand-400: #46a57f;
+            --color-brand-500: #258a65;
+            --color-brand-600: #176f51;
+            --color-brand-700: #135a43;
+            --color-brand-800: #114837;
+            --color-brand-900: #0e3b2e;
+            --color-brand-950: #07211a;
+        }
+
+        @layer base {
+            body {
+                @apply bg-stone-50 text-stone-800 antialiased;
+                line-height: 1.7;
+            }
+
+            h1, h2, h3, h4 {
+                @apply text-stone-900;
+                line-height: 1.35;
+            }
+
+            :focus-visible {
+                @apply outline-2 outline-offset-2 outline-brand-500;
+            }
+        }
+
+        @utility container-page {
+            @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+        }
+
+        @utility card {
+            @apply rounded-2xl border border-stone-200/80 bg-white shadow-sm;
+        }
+
+        @utility btn {
+            @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition-colors;
+        }
+
+        @utility btn-primary {
+            @apply btn bg-brand-600 text-white hover:bg-brand-700;
+        }
+
+        @utility btn-secondary {
+            @apply btn border border-stone-300 bg-white text-stone-700 hover:border-stone-400 hover:bg-stone-50;
+        }
+
+        @utility btn-ghost {
+            @apply btn text-stone-600 hover:bg-stone-100 hover:text-stone-900;
+        }
+    </style>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="flex min-h-screen flex-col">
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2">মূল বিষয়ে যান</a>
+
+    <!-- ===================== Header ===================== -->
+    <header class="sticky top-0 z-40 border-b border-stone-200/80 bg-white/95 backdrop-blur">
+        <div class="container-page flex h-16 items-center justify-between gap-4">
+            <a href="#" class="flex shrink-0 items-center gap-2.5">
+                <img src="assets/images/favicon.svg" alt="" class="size-9">
+                <span class="text-[17px] font-bold leading-tight text-stone-900">১২ নং মদনপুর ইউনিয়ন</span>
+            </a>
+
+            <nav class="hidden items-center gap-0.5 xl:flex" aria-label="প্রধান মেনু">
+                <a href="#" class="rounded-lg bg-brand-50 px-2.5 py-2 text-[15px] font-medium text-brand-700">হোম</a>
+                <a href="#about" class="rounded-lg px-2.5 py-2 text-[15px] font-medium text-stone-600 transition-colors hover:bg-stone-100 hover:text-stone-900">ইউনিয়ন সম্পর্কে</a>
+                <a href="#stats" class="rounded-lg px-2.5 py-2 text-[15px] font-medium text-stone-600 transition-colors hover:bg-stone-100 hover:text-stone-900">ওয়ার্ড</a>
+                <a href="#stats" class="rounded-lg px-2.5 py-2 text-[15px] font-medium text-stone-600 transition-colors hover:bg-stone-100 hover:text-stone-900">গ্রাম</a>
+                <a href="#institution" class="rounded-lg px-2.5 py-2 text-[15px] font-medium text-stone-600 transition-colors hover:bg-stone-100 hover:text-stone-900">প্রতিষ্ঠান</a>
+                <a href="#place" class="rounded-lg px-2.5 py-2 text-[15px] font-medium text-stone-600 transition-colors hover:bg-stone-100 hover:text-stone-900">গুরুত্বপূর্ণ স্থান</a>
+                <a href="#complaint" class="rounded-lg px-2.5 py-2 text-[15px] font-medium text-stone-600 transition-colors hover:bg-stone-100 hover:text-stone-900">অভিযোগ</a>
+                <a href="#need" class="rounded-lg px-2.5 py-2 text-[15px] font-medium text-stone-600 transition-colors hover:bg-stone-100 hover:text-stone-900">এলাকার প্রয়োজন</a>
+            </nav>
+
+            <div class="hidden items-center gap-2 xl:flex">
+                <a href="#contribute" class="btn-primary">
+                    <svg class="size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+                    তথ্য দিন
+                </a>
+                <a href="#" class="btn-secondary">লগইন / নিবন্ধন</a>
+            </div>
+
+            <button type="button" class="btn-ghost -mr-2 px-2.5 xl:hidden" data-toggle="#mobile-menu" aria-expanded="false" aria-controls="mobile-menu" aria-label="মেনু খুলুন">
+                <svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden border-t border-stone-200 bg-white xl:hidden">
+            <nav class="container-page grid gap-1 py-3" aria-label="মোবাইল মেনু">
+                <a href="#" class="rounded-lg bg-brand-50 px-3 py-2.5 font-medium text-brand-700">হোম</a>
+                <a href="#about" class="rounded-lg px-3 py-2.5 font-medium text-stone-700 hover:bg-stone-100">ইউনিয়ন সম্পর্কে</a>
+                <a href="#stats" class="rounded-lg px-3 py-2.5 font-medium text-stone-700 hover:bg-stone-100">ওয়ার্ড</a>
+                <a href="#stats" class="rounded-lg px-3 py-2.5 font-medium text-stone-700 hover:bg-stone-100">গ্রাম</a>
+                <a href="#institution" class="rounded-lg px-3 py-2.5 font-medium text-stone-700 hover:bg-stone-100">প্রতিষ্ঠান</a>
+                <a href="#place" class="rounded-lg px-3 py-2.5 font-medium text-stone-700 hover:bg-stone-100">গুরুত্বপূর্ণ স্থান</a>
+                <a href="#complaint" class="rounded-lg px-3 py-2.5 font-medium text-stone-700 hover:bg-stone-100">অভিযোগ</a>
+                <a href="#need" class="rounded-lg px-3 py-2.5 font-medium text-stone-700 hover:bg-stone-100">এলাকার প্রয়োজন</a>
+                <div class="mt-2 grid grid-cols-2 gap-2 border-t border-stone-100 pt-3">
+                    <a href="#contribute" class="btn-primary">তথ্য দিন</a>
+                    <a href="#" class="btn-secondary">লগইন / নিবন্ধন</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="flex-1">
+        <!-- ===================== Hero with background image slider ===================== -->
+        <section class="relative isolate overflow-hidden bg-brand-950" data-hero-slider>
+            <div class="absolute inset-0 -z-10" aria-hidden="true">
+                <img src="assets/images/hero-1.webp" alt="" class="hero-slide is-active absolute inset-0 size-full object-cover" fetchpriority="high">
+                <img src="assets/images/hero-2.webp" alt="" class="hero-slide absolute inset-0 size-full object-cover" loading="lazy" fetchpriority="low">
+                <img src="assets/images/hero-3.webp" alt="" class="hero-slide absolute inset-0 size-full object-cover" loading="lazy" fetchpriority="low">
+                <img src="assets/images/hero-4.webp" alt="" class="hero-slide absolute inset-0 size-full object-cover" loading="lazy" fetchpriority="low">
+                <div class="absolute inset-0 bg-gradient-to-b from-black/55 via-black/45 to-black/65"></div>
+            </div>
+
+            <div class="container-page flex min-h-[520px] flex-col items-center justify-center py-20 text-center sm:min-h-[600px]">
+                <span class="hero-enter inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-sm text-white/90 backdrop-blur-sm" style="--i: 0">
+                    <svg class="size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
+                    ইউনিয়নের তথ্য বাতায়ন
+                </span>
+                <h1 class="hero-enter mt-6 text-3xl font-bold text-white drop-shadow min-[400px]:text-4xl sm:text-5xl lg:text-6xl" style="--i: 1"><span class="hero-title-shine">১২ নং মদনপুর ইউনিয়ন</span></h1>
+                <p class="hero-enter mx-auto mt-5 max-w-2xl text-lg text-white/90 sm:text-xl" style="--i: 2">আমাদের ইউনিয়ন, আমাদের পরিচয় ও আমাদের সম্ভাবনার ডিজিটাল ঠিকানা।</p>
+
+                <form role="search" class="hero-enter mt-10 w-full max-w-2xl" style="--i: 3" data-demo-form>
+                    <label for="hero-search" class="sr-only">ইউনিয়নের তথ্য খুঁজুন</label>
+                    <div class="flex items-center gap-2 rounded-2xl bg-white p-2 shadow-xl shadow-black/20">
+                        <svg class="ml-3 size-5 shrink-0 text-stone-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/></svg>
+                        <input id="hero-search" type="search" name="q" placeholder="ইউনিয়নের তথ্য খুঁজুন..." minlength="2" required
+                            class="min-w-0 flex-1 border-0 bg-transparent px-1 py-2.5 text-base text-stone-900 placeholder:text-stone-400 focus:outline-none focus:ring-0">
+                        <button type="submit" class="btn-primary px-5 py-3 text-base">খুঁজুন</button>
+                    </div>
+                </form>
+
+                <div class="hero-enter mt-10 flex items-center gap-2" style="--i: 4" aria-label="স্লাইড নির্বাচন">
+                    <button type="button" data-slide-to="0" aria-label="স্লাইড ১" class="h-2 w-6 rounded-full bg-white transition-colors"></button>
+                    <button type="button" data-slide-to="1" aria-label="স্লাইড ২" class="h-2 w-6 rounded-full bg-white/40 transition-colors"></button>
+                    <button type="button" data-slide-to="2" aria-label="স্লাইড ৩" class="h-2 w-6 rounded-full bg-white/40 transition-colors"></button>
+                    <button type="button" data-slide-to="3" aria-label="স্লাইড ৪" class="h-2 w-6 rounded-full bg-white/40 transition-colors"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== Overview: counts ===================== -->
+        <section id="stats" class="container-page relative z-10 -mt-12 scroll-mt-24">
+            <div class="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-5">
+                <a href="#stats" class="card group flex flex-col items-start gap-3 p-5 transition hover:-translate-y-0.5 hover:border-brand-200 hover:shadow-md" data-reveal style="--i: 0">
+                    <span class="icon-pop flex size-11 items-center justify-center rounded-xl bg-brand-50 text-brand-700 transition group-hover:bg-brand-600 group-hover:text-white">
+                        <svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z"/></svg>
+                    </span>
+                    <div>
+                        <p class="text-3xl font-bold tabular-nums text-stone-900" data-count-to="9">৯</p>
+                        <p class="mt-0.5 text-sm font-medium text-stone-500">ওয়ার্ড</p>
+                    </div>
+                </a>
+                <a href="#stats" class="card group flex flex-col items-start gap-3 p-5 transition hover:-translate-y-0.5 hover:border-brand-200 hover:shadow-md" data-reveal style="--i: 1">
+                    <span class="icon-pop flex size-11 items-center justify-center rounded-xl bg-brand-50 text-brand-700 transition group-hover:bg-brand-600 group-hover:text-white">
+                        <svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/></svg>
+                    </span>
+                    <div>
+                        <p class="text-3xl font-bold tabular-nums text-stone-900" data-count-to="19">১৯</p>
+                        <p class="mt-0.5 text-sm font-medium text-stone-500">গ্রাম</p>
+                    </div>
+                </a>
+                <a href="#institution" class="card group flex flex-col items-start gap-3 p-5 transition hover:-translate-y-0.5 hover:border-brand-200 hover:shadow-md" data-reveal style="--i: 2">
+                    <span class="icon-pop flex size-11 items-center justify-center rounded-xl bg-brand-50 text-brand-700 transition group-hover:bg-brand-600 group-hover:text-white">
+                        <svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z"/></svg>
+                    </span>
+                    <div>
+                        <p class="text-3xl font-bold tabular-nums text-stone-900" data-count-to="7">৭</p>
+                        <p class="mt-0.5 text-sm font-medium text-stone-500">প্রতিষ্ঠান</p>
+                    </div>
+                </a>
+                <a href="#complaint" class="card group flex flex-col items-start gap-3 p-5 transition hover:-translate-y-0.5 hover:border-brand-200 hover:shadow-md" data-reveal style="--i: 3">
+                    <span class="icon-pop flex size-11 items-center justify-center rounded-xl bg-brand-50 text-brand-700 transition group-hover:bg-brand-600 group-hover:text-white">
+                        <svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/></svg>
+                    </span>
+                    <div>
+                        <p class="text-3xl font-bold tabular-nums text-stone-900" data-count-to="3">৩</p>
+                        <p class="mt-0.5 text-sm font-medium text-stone-500">যাচাইকৃত অভিযোগ</p>
+                    </div>
+                </a>
+                <a href="#need" class="card group col-span-2 flex flex-col items-start gap-3 p-5 transition hover:-translate-y-0.5 hover:border-brand-200 hover:shadow-md md:col-span-1" data-reveal style="--i: 4">
+                    <span class="icon-pop flex size-11 items-center justify-center rounded-xl bg-brand-50 text-brand-700 transition group-hover:bg-brand-600 group-hover:text-white">
+                        <svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/></svg>
+                    </span>
+                    <div>
+                        <p class="text-3xl font-bold tabular-nums text-stone-900" data-count-to="4">৪</p>
+                        <p class="mt-0.5 text-sm font-medium text-stone-500">এলাকার প্রয়োজন</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- ===================== Featured content ===================== -->
+        <div class="container-page mt-16 space-y-16 sm:mt-20 sm:space-y-20">
+
+            <!-- About the union -->
+            <section id="about" class="scroll-mt-24" data-reveal>
+                <div class="section-heading mb-5 flex items-end justify-between gap-4" data-title-anim>
+                    <h2 class="relative flex items-center gap-2.5 pb-2 text-xl font-bold sm:text-2xl">
+                        <span class="title-icon flex size-9 items-center justify-center rounded-xl bg-brand-50 text-brand-700">
+                            <svg class="size-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg>
+                        </span>
+                        <span class="title-text">ইউনিয়ন সম্পর্কে</span>
+                        <span class="title-bar absolute bottom-0 left-[2.875rem] h-[3px] w-12 rounded-full bg-gradient-to-r from-brand-500 to-brand-300" aria-hidden="true"></span>
+                    </h2>
+                    <a href="#about" class="title-link group inline-flex shrink-0 items-center gap-1 pb-2 text-sm font-semibold text-brand-700 hover:text-brand-800">
+                        সব দেখুন <svg class="size-4 transition-transform duration-300 group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                    </a>
+                </div>
+                <div class="card zoom-on-hover grid overflow-hidden md:grid-cols-2">
+                    <div class="aspect-[16/10] overflow-hidden bg-stone-100 md:aspect-auto">
+                        <img src="assets/images/about.webp" alt="মদনপুর ইউনিয়নের পরিচিতি" class="size-full object-cover" loading="lazy">
+                    </div>
+                    <div class="flex flex-col justify-center p-6 sm:p-10">
+                        <h3 class="text-2xl font-bold">মদনপুর ইউনিয়নের পরিচিতি</h3>
+                        <p class="mt-4 line-clamp-5 leading-8 text-stone-600">নদী, সবুজ মাঠ আর পরিশ্রমী মানুষের ইউনিয়ন — মদনপুর।</p>
+                        <div class="mt-6">
+                            <a href="#about" class="btn-primary">বিস্তারিত দেখুন <svg class="size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="grid gap-16 lg:grid-cols-2 lg:gap-8">
+                <!-- Institution -->
+                <section id="institution" class="zoom-on-hover scroll-mt-24" data-reveal="left">
+                    <div class="section-heading mb-5 flex items-end justify-between gap-4" data-title-anim>
+                        <h2 class="relative flex items-center gap-2.5 pb-2 text-xl font-bold sm:text-2xl">
+                            <span class="title-icon flex size-9 items-center justify-center rounded-xl bg-brand-50 text-brand-700">
+                                <svg class="size-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z"/></svg>
+                            </span>
+                            <span class="title-text">প্রতিষ্ঠান</span>
+                            <span class="title-bar absolute bottom-0 left-[2.875rem] h-[3px] w-12 rounded-full bg-gradient-to-r from-brand-500 to-brand-300" aria-hidden="true"></span>
+                        </h2>
+                        <a href="#institution" class="title-link group inline-flex shrink-0 items-center gap-1 pb-2 text-sm font-semibold text-brand-700 hover:text-brand-800">
+                            সব দেখুন <svg class="size-4 transition-transform duration-300 group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                        </a>
+                    </div>
+                    <a href="#institution" class="card group flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-md">
+                        <div class="relative aspect-[16/10] overflow-hidden bg-stone-100">
+                            <img src="assets/images/institution.webp" alt="সাজিউড়া মফিলা ফয়েজ আদর্শ উচ্চ বিদ্যালয়" loading="lazy" class="size-full object-cover">
+                        </div>
+                        <div class="flex flex-1 flex-col p-5">
+                            <h3 class="text-lg font-semibold text-stone-900 group-hover:text-brand-700">সাজিউড়া মফিলা ফয়েজ আদর্শ উচ্চ বিদ্যালয়</h3>
+                            <div class="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm text-stone-500">
+                                <span class="inline-flex items-center gap-1.5"><svg class="size-4 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 0 0 5.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6Z"/></svg> মাধ্যমিক বিদ্যালয়</span>
+                                <span class="inline-flex items-center gap-1.5"><svg class="size-4 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg> মদনপুর, ১ নং ওয়ার্ড</span>
+                            </div>
+                            <p class="mt-3 line-clamp-3 text-sm leading-6 text-stone-600">প্রথম থেকে পঞ্চম শ্রেণি পর্যন্ত শিক্ষার্থীদের পাঠদান করা হয়।</p>
+                            <span class="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-700">বিস্তারিত দেখুন <svg class="size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg></span>
+                        </div>
+                    </a>
+                </section>
+
+                <!-- Important place -->
+                <section id="place" class="zoom-on-hover scroll-mt-24" data-reveal="right" style="--i: 1">
+                    <div class="section-heading mb-5 flex items-end justify-between gap-4" data-title-anim>
+                        <h2 class="relative flex items-center gap-2.5 pb-2 text-xl font-bold sm:text-2xl">
+                            <span class="title-icon flex size-9 items-center justify-center rounded-xl bg-brand-50 text-brand-700">
+                                <svg class="size-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456Z"/></svg>
+                            </span>
+                            <span class="title-text">গুরুত্বপূর্ণ স্থান</span>
+                            <span class="title-bar absolute bottom-0 left-[2.875rem] h-[3px] w-12 rounded-full bg-gradient-to-r from-brand-500 to-brand-300" aria-hidden="true"></span>
+                        </h2>
+                        <a href="#place" class="title-link group inline-flex shrink-0 items-center gap-1 pb-2 text-sm font-semibold text-brand-700 hover:text-brand-800">
+                            সব দেখুন <svg class="size-4 transition-transform duration-300 group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                        </a>
+                    </div>
+                    <a href="#place" class="card group flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-md">
+                        <div class="relative aspect-[16/10] overflow-hidden bg-stone-100">
+                            <img src="assets/images/place.webp" alt="সাইটউড়ি নদী ঘাট ও ভেসাল জাল" loading="lazy" class="size-full object-cover">
+                        </div>
+                        <div class="flex flex-1 flex-col p-5">
+                            <h3 class="text-lg font-semibold text-stone-900 group-hover:text-brand-700">সাইটউড়ি নদী ঘাট ও ভেসাল জাল</h3>
+                            <div class="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm text-stone-500">
+                                <span class="inline-flex items-center gap-1.5"><svg class="size-4 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 0 0 5.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6Z"/></svg> প্রাকৃতিক</span>
+                                <span class="inline-flex items-center gap-1.5"><svg class="size-4 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg> নদীপাড়, ৭ নং ওয়ার্ড</span>
+                            </div>
+                            <p class="mt-3 line-clamp-3 text-sm leading-6 text-stone-600">নদীপাড় গ্রামের পাশ দিয়ে বয়ে চলা নদীর এই ঘাটটি ইউনিয়নের সবচেয়ে সুন্দর স্থানগুলোর একটি। ভোরে ও বিকেলে জেলেরা ভেসাল জাল দিয়ে মাছ ধরেন। বিকেলে অনেকে এখানে...</p>
+                            <span class="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-700">বিস্তারিত দেখুন <svg class="size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg></span>
+                        </div>
+                    </a>
+                </section>
+
+                <!-- Verified complaint -->
+                <section id="complaint" class="scroll-mt-24" data-reveal="left">
+                    <div class="section-heading mb-5 flex items-end justify-between gap-4" data-title-anim>
+                        <h2 class="relative flex items-center gap-2.5 pb-2 text-xl font-bold sm:text-2xl">
+                            <span class="title-icon flex size-9 items-center justify-center rounded-xl bg-brand-50 text-brand-700">
+                                <svg class="size-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/></svg>
+                            </span>
+                            <span class="title-text">যাচাইকৃত অভিযোগ</span>
+                            <span class="title-bar absolute bottom-0 left-[2.875rem] h-[3px] w-12 rounded-full bg-gradient-to-r from-brand-500 to-brand-300" aria-hidden="true"></span>
+                        </h2>
+                        <a href="#complaint" class="title-link group inline-flex shrink-0 items-center gap-1 pb-2 text-sm font-semibold text-brand-700 hover:text-brand-800">
+                            সব দেখুন <svg class="size-4 transition-transform duration-300 group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                        </a>
+                    </div>
+                    <a href="#complaint" class="card group flex h-full flex-col p-5 transition hover:-translate-y-0.5 hover:shadow-md sm:p-6">
+                        <div class="flex items-start justify-between gap-3">
+                            <h3 class="text-lg font-semibold text-stone-900 group-hover:text-brand-700">বাজারের পাশের ড্রেন বন্ধ হয়ে পানি জমে আছে</h3>
+                            <span class="inline-flex items-center whitespace-nowrap rounded-full bg-green-50 px-2.5 py-0.5 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">যাচাইকৃত</span>
+                        </div>
+                        <div class="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-sm text-stone-500">
+                            <span class="inline-flex items-center gap-1.5"><svg class="size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg> মদনপুর, ১ নং ওয়ার্ড</span>
+                            <span class="inline-flex items-center gap-1.5"><svg class="size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"/></svg> ৬ অক্টোবর ২০২৬</span>
+                            <span class="inline-flex items-center gap-1.5"><svg class="size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/></svg> অভিযোগকারী: রফিকুল ইসলাম (নমুনা)</span>
+                        </div>
+                        <p class="mt-3 line-clamp-3 text-sm leading-6 text-stone-600">মদনপুর বাজারের পূর্ব পাশের ড্রেনটি দীর্ঘদিন পরিষ্কার না করায় ময়লায় বন্ধ হয়ে গেছে। সামান্য বৃষ্টিতেই রাস্তায় পানি জমে যায় এবং দুর্গন্ধ ছড়ায়। দ্রুত পরিষ্ক...</p>
+                        <span class="mt-auto inline-flex items-center gap-1.5 pt-5 text-sm font-semibold text-brand-700">বিস্তারিত দেখুন <svg class="size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg></span>
+                    </a>
+                </section>
+
+                <!-- Area need -->
+                <section id="need" class="scroll-mt-24" data-reveal="right" style="--i: 1">
+                    <div class="section-heading mb-5 flex items-end justify-between gap-4" data-title-anim>
+                        <h2 class="relative flex items-center gap-2.5 pb-2 text-xl font-bold sm:text-2xl">
+                            <span class="title-icon flex size-9 items-center justify-center rounded-xl bg-brand-50 text-brand-700">
+                                <svg class="size-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/></svg>
+                            </span>
+                            <span class="title-text">এলাকার প্রয়োজন</span>
+                            <span class="title-bar absolute bottom-0 left-[2.875rem] h-[3px] w-12 rounded-full bg-gradient-to-r from-brand-500 to-brand-300" aria-hidden="true"></span>
+                        </h2>
+                        <a href="#need" class="title-link group inline-flex shrink-0 items-center gap-1 pb-2 text-sm font-semibold text-brand-700 hover:text-brand-800">
+                            সব দেখুন <svg class="size-4 transition-transform duration-300 group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                        </a>
+                    </div>
+                    <a href="#need" class="card group flex h-full flex-col p-5 transition hover:-translate-y-0.5 hover:shadow-md sm:p-6">
+                        <div class="flex items-start justify-between gap-3">
+                            <div>
+                                <span class="inline-flex items-center gap-1 whitespace-nowrap rounded-full bg-brand-50 px-2.5 py-0.5 text-xs font-medium text-brand-700 ring-1 ring-inset ring-brand-600/20">সেতু / কালভার্ট</span>
+                                <h3 class="mt-2 text-lg font-semibold text-stone-900 group-hover:text-brand-700">জেলেপাড়া ও নদীপাড়ের মাঝে খালের উপর সেতু প্রয়োজন</h3>
+                            </div>
+                            <span class="inline-flex items-center whitespace-nowrap rounded-full bg-green-50 px-2.5 py-0.5 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">অনুমোদিত</span>
+                        </div>
+                        <div class="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-sm text-stone-500">
+                            <span class="inline-flex items-center gap-1.5"><svg class="size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg> জেলেপাড়া, ৭ নং ওয়ার্ড</span>
+                            <span class="inline-flex items-center gap-1.5"><svg class="size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"/></svg> ৬ অক্টোবর ২০২৬</span>
+                        </div>
+                        <p class="mt-3 line-clamp-3 text-sm leading-6 text-stone-600">জেলেপাড়া ও নদীপাড় গ্রামের মাঝখানের খালের উপর বর্তমানে একটি বাঁশের সাঁকো রয়েছে। বর্ষায় সাঁকোটি ঝুঁকিপূর্ণ হয়ে পড়ে এবং শিক্ষার্থীসহ প্রায় দুই হাজার মানুষের...</p>
+                        <span class="mt-auto inline-flex items-center gap-1.5 pt-5 text-sm font-semibold text-brand-700">বিস্তারিত দেখুন <svg class="size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg></span>
+                    </a>
+                </section>
+            </div>
+
+            <!-- Call to action -->
+            <section id="contribute" class="relative isolate scroll-mt-24 overflow-hidden rounded-3xl bg-brand-700 px-6 py-10 text-center sm:px-12 sm:py-14" data-reveal="zoom">
+                <div class="pointer-events-none absolute inset-0 -z-10" aria-hidden="true">
+                    <div class="float-blob absolute -left-16 -top-20 size-64 rounded-full bg-brand-400/30 blur-3xl"></div>
+                    <div class="float-blob absolute -bottom-24 -right-10 size-72 rounded-full bg-brand-300/20 blur-3xl" style="animation-delay: -6s"></div>
+                </div>
+                <h2 class="text-2xl font-bold text-white sm:text-3xl">আপনার এলাকার তথ্য দিয়ে সহযোগিতা করুন</h2>
+                <p class="mx-auto mt-3 max-w-2xl text-brand-100">প্রতিষ্ঠান, গুরুত্বপূর্ণ স্থান, অভিযোগ বা এলাকার উন্নয়ন চাহিদার তথ্য জমা দিন। যাচাইয়ের পর তা সবার জন্য প্রকাশ করা হবে।</p>
+                <a href="#contribute" class="btn mt-7 bg-white px-6 py-3 text-base text-brand-800 transition hover:-translate-y-0.5 hover:bg-brand-50 hover:shadow-lg hover:shadow-black/20">
+                    <svg class="size-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+                    তথ্য দিন
+                </a>
+            </section>
+        </div>
+    </main>
+
+    <!-- ===================== Footer ===================== -->
+    <footer class="mt-16 bg-brand-950 text-brand-100">
+        <div class="container-page grid gap-10 py-12 md:grid-cols-12">
+            <div class="md:col-span-5">
+                <div class="flex items-center gap-2.5">
+                    <img src="assets/images/favicon.svg" alt="" class="size-9">
+                    <span class="text-lg font-bold text-white">১২ নং মদনপুর ইউনিয়ন</span>
+                </div>
+                <p class="mt-4 max-w-md text-sm leading-7 text-brand-200/80">মদনপুর ইউনিয়নের যাচাইকৃত তথ্য, অভিযোগ ও উন্নয়ন চাহিদার একটি কমিউনিটি-ভিত্তিক ডিজিটাল প্ল্যাটফর্ম।</p>
+                <div class="mt-5 space-y-2 text-sm text-brand-200/80">
+                    <p class="flex items-center gap-2">
+                        <svg class="size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
+                        ইউনিয়ন পরিষদ কার্যালয়, মদনপুর
+                    </p>
+                </div>
+            </div>
+            <div class="md:col-span-4">
+                <h2 class="text-sm font-semibold text-white">গুরুত্বপূর্ণ লিংক</h2>
+                <ul class="mt-4 grid grid-cols-2 gap-x-4 gap-y-2.5 text-sm">
+                    <li><a href="#about" class="text-brand-200/80 hover:text-white">ইউনিয়ন সম্পর্কে</a></li>
+                    <li><a href="#stats" class="text-brand-200/80 hover:text-white">ওয়ার্ড</a></li>
+                    <li><a href="#stats" class="text-brand-200/80 hover:text-white">গ্রাম</a></li>
+                    <li><a href="#institution" class="text-brand-200/80 hover:text-white">প্রতিষ্ঠান</a></li>
+                    <li><a href="#place" class="text-brand-200/80 hover:text-white">গুরুত্বপূর্ণ স্থান</a></li>
+                    <li><a href="#complaint" class="text-brand-200/80 hover:text-white">অভিযোগ</a></li>
+                    <li><a href="#need" class="text-brand-200/80 hover:text-white">এলাকার প্রয়োজন</a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-3">
+                <h2 class="text-sm font-semibold text-white">অংশগ্রহণ করুন</h2>
+                <ul class="mt-4 space-y-2.5 text-sm">
+                    <li><a href="#contribute" class="text-brand-200/80 hover:text-white">তথ্য দিন</a></li>
+                    <li><a href="#" class="text-brand-200/80 hover:text-white">লগইন</a></li>
+                    <li><a href="#" class="text-brand-200/80 hover:text-white">নিবন্ধন করুন</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-white/10">
+            <div class="container-page py-5 text-center text-xs text-brand-200/60">
+                © <span data-year>২০২৬</span> ১২ নং মদনপুর ইউনিয়ন। সর্বস্বত্ব সংরক্ষিত। Developed &amp; Maintenance By <a href="https://www.facebook.com/mdsuhaebsh/" class="text-white">MD. SUHAEB HOSEN</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
